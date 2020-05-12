@@ -62,6 +62,13 @@
       <!--<p appBetterHighlight [defaultColor]="'yellow'" [highlightColor]="'red'">Style me with better directive as an attribute directive!</p>-->
       <p appBetterHighlight defaultColor="yellow" [test]="'red'">Style me with better directive as an attribute directive!</p>
       <appBetterHighlight>Style me with better directive as an HTML element directive!</appBetterHighlight>
+      <br /><br />
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">Value is 5</p>
+        <p *ngSwitchCase="10">Value is 10</p>
+        <p *ngSwitchCase="100">Value is 100</p>
+        <p *ngSwitchDefault>Value is Default</p>
+      </div>
     </div>
   </div>
 </div>
